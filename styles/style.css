@@ -1,6 +1,39 @@
 :root {
-    --primary-bg-color: #F6F6F4; 
+    /* Huisstijl kleuren */ 
+    --main-bg-color: #FFFFFF; 
+    --secondary-bg-color: #F6F6F4; 
+    --secondary-bg-color: #3C3B34;
+    --primary-text-color: #3C3B34; 
+    --subtitle-text-color : #9B9A92; 
+    --accent-color: #FF6B6B;
+
+    --primary-spacing: 1em; 
+    --secondary-spacing: 2em;
+
+    /* Font */ 
+    --light-text : 'Aktiv-Lt', sans serif; 
+    --medium-text: 'Aktiv-Rg', sans serif;
+    --medium-text: 'Aktiv-Md', sans serif;
+    --bold-text: 'Aktiv-Bd', sans serif;
 }
+/* Load in Fonts */ 
+@font-face {
+    font-family: 'Aktiv-Lt';
+    src: url(../assets/Font/AktivGrotesk_Lt.ttf);
+}
+@font-face {
+    font-family: 'Aktiv-Rg';
+    src: url(../assets/Font/AktivGrotesk_Rg.ttf);
+}
+@font-face {
+    font-family: 'Aktiv-Md';
+    src: url(../assets/Font/AktivGrotesk_Md.ttf);
+}
+@font-face {
+    font-family: 'Aktiv-Bd';
+    src: url(../assets/Font/AktivGrotesk_Bd.ttf);
+}
+
 
 * {
     margin: 0;
@@ -8,5 +41,59 @@
 }
 
 body{
-    background-color: var(--primary-bg-color);
+    background-color: var(--main-bg-color);
+    color: #3C3B34;
+}
+
+a{
+    color: #3C3B34;
+    text-decoration: none;
+}
+
+/* Mobile and smaller screens */
+@media (min-width: 20em) and (max-width: 30em) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    header{
+        display: flex;
+        margin: 0.5em;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 1.5em;
+    }
+    .contact-bt{
+        font-family: var(--medium-text);
+        position: absolute;
+        right: 0;
+        margin-right: 6em;
+        outline-style: solid;
+        outline-offset: 0.2em;
+    }
+
+    main {
+        padding: primar;
+        margin: var(--secondary-spacing) var(--primary-spacing) var(--primary-spacing) var(--primary-spacing);
+    }
+
+    p {
+        font-family: var(--light-text);
+        font-size: 1.25em;
+    }
+    h1 {
+        font-family: var(--light-text);
+        color: var(--subtitle-text-color);
+        font-size: 1em;
+    }
+    h2 {
+        font-family: var(--bold-text);
+        font-size: 2.5em;
+    }
+    
 }

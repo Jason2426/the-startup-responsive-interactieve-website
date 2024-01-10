@@ -42,22 +42,24 @@
 
 body{
     background-color: var(--main-bg-color);
-    color: #3C3B34;
+    color: var(--primary-text-color)
 }
 
 a{
-    color: #3C3B34;
+    color: var(--primary-text-color);
     text-decoration: none;
 }
 
 /* Mobile and smaller screens */
-@media (min-width: 20em) and (max-width: 30em) {
+@media (min-width: 20em) {
 
     body {
         display: flex;
         flex-direction: column;
         margin: 1em;
     }
+    
+    /* Header styling */
 
     header{
         display: flex;
@@ -76,24 +78,109 @@ a{
         outline-style: solid;
         outline-offset: 0.2em;
     }
+    
+    /* Header styling end */
+
+    /* Main section styling */
 
     main {
-        padding: primar;
-        margin: var(--secondary-spacing) var(--primary-spacing) var(--primary-spacing) var(--primary-spacing);
-    }
-
-    p {
-        font-family: var(--light-text);
-        font-size: 1.25em;
+        margin: var(--secondary-spacing) var(--primary-spacing) 3em var(--secondary-spacing);
     }
     h1 {
         font-family: var(--light-text);
         color: var(--subtitle-text-color);
         font-size: 1em;
+        margin-top: 1em;
     }
     h2 {
         font-family: var(--bold-text);
         font-size: 2.5em;
+        margin-top: 0.75em;
     }
-    
+    .abstract {
+        font-family: var(--light-text);
+        font-size: 1.25em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    .schedule-bt {
+        font-family: var(--medium-text);
+        background-color: var(--accent-color);
+        color: #FFFFFF;
+        padding: 0.75em;
+        border-radius: 0.25em;
+        margin-top: var(--primary-spacing);
+        margin-bottom: 1em;
+    }
+    .discover-bt {
+        font-family: var(--medium-text);
+        color: var(--accent-color);
+        margin-top: 3em;
+    }
+    /* Main styling end */
+
+    /* Dictionary Section Styling */
+    .dictionary {
+        background-color: var(--primary-text-color);
+        width: 100%;
+        margin: var(--secondary-spacing);
+    }
+    h3{
+        font-family: var(--bold-text);
+        color: #FFFFFF;
+        font-size: 2em;
+    }    
+    strong{
+        color: #9B9A92;
+    }
+    .ai-paragraph {
+        font-family: var(--light-text);
+        color: #FFFFFF;
+    }
+    /* Dictionary styling end */
+
+    /* Steps section styling */
+    .steps {
+        margin: var(--secondary-spacing);
+    }
+    h4{
+        font-family: var(--bold-text);
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .card1 {
+        margin-top: var(--primary-spacing);
+        border-radius: 0.5em;
+        margin: 1em;
+        padding: 1em;
+        
+        outline-style: solid;
+        outline-color: #DADAD5;
+        outline-offset: 0.5em;
+    }
+    .card-img {
+        height: 13em;
+    }
+    h5 {
+        font-family: var(--bold-text);
+        font-size: 1.5em;
+    }
+    .subtitle {
+        font-family: var(--light-text);
+        font-size: 1.2em;
+        color: var(--subtitle-text-color);
+        margin : 0.2em 0em 0.2em 0em;
+    }
+    .card-text {
+        margin: 0;
+    }
+    /* Steps styling end */ 
+
+    /* Cases section styling */
+
+    .cases {
+        display: grid;
+        background-color: var(--primary-text-color);
+    }
+    /* Cases styling end
 }

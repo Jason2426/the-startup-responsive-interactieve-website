@@ -153,23 +153,16 @@ a{
         margin: var(--primary-spacing) 0em var(--primary-spacing) 0em;
     }
     .card1 {
+        margin: var(--secondary-spacing);
         border-radius: 0.5em;
-        /* margin: 2em;
-        padding: 0.5em; */
-        margin: 2em;
-        padding: 1em;
-        width: 250px;
-        height: 320px;
-        
+
         outline-style: solid;
         outline-color: #DADAD5;
-        outline-offset: 0.5em;
     }
     .card-img {
         height: 13em;
         background-color: #EEEEEE;
         border-radius: 1em;
-        padding: 2em;
     }
     h5 {
         font-family: var(--bold-text);
@@ -179,11 +172,11 @@ a{
         font-family: var(--medium-text);
         font-size: 1.2em;
         color: var(--subtitle-text-color);
-        margin : 0.2em 0em 0.2em 0em;
+        margin: 1em;
     }
     .card-text {
         font-family: var(--light-text);
-        margin: 0;
+        margin: 1em;
     }
     /* Steps styling end */ 
 

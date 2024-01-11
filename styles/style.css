@@ -110,6 +110,7 @@ a{
     .discover-bt {
         font-family: var(--medium-text);
         color: var(--accent-color);
+        margin: 0.5em;
     }
     .wrapper{
         display: flex;
@@ -121,8 +122,9 @@ a{
     /* Dictionary Section Styling */
     .dictionary {
         background-color: var(--primary-text-color);
-        margin: 0;
+        margin: 0.5em;
         padding: var(--secondary-spacing);
+        
     }
     h3 {
         font-family: var(--bold-text);
@@ -135,6 +137,7 @@ a{
     }
     .ai-paragraph {
         font-family: var(--light-text);
+        font-size: 1.25em;
         color: #FFFFFF;
     }
     
@@ -189,7 +192,4 @@ a{
 
     @media (min-width: 33em) {
         
-        body{
-            background-color: var(--accent-color);
-        }
     }

@@ -42,7 +42,6 @@
 body{
     background-color: var(--main-bg-color);
     color: var(--primary-text-color);
-    margin: 0.5em;
 }
 
 a{
@@ -80,11 +79,12 @@ a{
     main {
         margin: 0em var(--primary-spacing) 3em var(--secondary-spacing);
     }
+    
     h1 {
         font-family: var(--light-text);
         color: var(--subtitle-text-color);
         font-size: 1em;
-        margin-top: 5em;
+        margin-top: 4em;
     }
     h2 {
         font-family: var(--bold-text);
@@ -122,15 +122,13 @@ a{
     /* Dictionary Section Styling */
     .dictionary {
         background-color: var(--primary-text-color);
-        margin: 0.5em;
         padding: var(--secondary-spacing);
-        
     }
     h3 {
         font-family: var(--bold-text);
         color: #FFFFFF;
         font-size: 2em;
-        margin-bottom: 0.5em;
+        margin: 1.5em 0em 0.5em 0em;
     }    
     strong {
         color: #9B9A92;
@@ -139,24 +137,29 @@ a{
         font-family: var(--light-text);
         font-size: 1.25em;
         color: #FFFFFF;
+        margin-bottom: var(--secondary-spacing);
     }
     
     /* Dictionary styling end */
 
     /* Steps section styling */
     .steps {
-        margin: var(--secondary-spacing);
+        padding: var(--secondary-spacing);
     }
+
     h4{
         font-family: var(--bold-text);
         font-size: 2em;
-        margin-bottom: 1em;
+        margin: var(--primary-spacing) 0em var(--primary-spacing) 0em;
     }
     .card1 {
-        margin-top: var(--primary-spacing);
         border-radius: 0.5em;
-        margin: 1em;
+        /* margin: 2em;
+        padding: 0.5em; */
+        margin: 2em;
         padding: 1em;
+        width: 250px;
+        height: 320px;
         
         outline-style: solid;
         outline-color: #DADAD5;
@@ -164,18 +167,22 @@ a{
     }
     .card-img {
         height: 13em;
+        background-color: #EEEEEE;
+        border-radius: 1em;
+        padding: 2em;
     }
     h5 {
         font-family: var(--bold-text);
         font-size: 1.5em;
     }
     .subtitle {
-        font-family: var(--light-text);
+        font-family: var(--medium-text);
         font-size: 1.2em;
         color: var(--subtitle-text-color);
         margin : 0.2em 0em 0.2em 0em;
     }
     .card-text {
+        font-family: var(--light-text);
         margin: 0;
     }
     /* Steps styling end */ 
@@ -192,4 +199,9 @@ a{
 
     @media (min-width: 33em) {
         
+        /* Header styling */
+
+        .logo {
+            height: 2.5em;
+        }
     }

@@ -34,7 +34,6 @@
     src: url(../assets/Font/AktivGrotesk_Bd.ttf);
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +42,7 @@
 body{
     background-color: var(--main-bg-color);
     color: var(--primary-text-color);
-    margin: var(--primary-spacing);
+    margin: 0.5em;
 }
 
 a{
@@ -58,12 +57,13 @@ a{
     header {
         display: flex;
         justify-content: space-between;
-        margin: 0.5em;
+        margin: 1.5em;
     }
-    
+
     .logo {
         height: 1.5em;
     }
+
     .contact-bt{
         font-family: var(--medium-text);
         position: absolute;
@@ -78,13 +78,13 @@ a{
     /* Main section styling */
 
     main {
-        margin: var(--secondary-spacing) var(--primary-spacing) 5em var(--secondary-spacing);
+        margin: 0em var(--primary-spacing) 3em var(--secondary-spacing);
     }
     h1 {
         font-family: var(--light-text);
         color: var(--subtitle-text-color);
         font-size: 1em;
-        margin-top: 1em;
+        margin-top: 5em;
     }
     h2 {
         font-family: var(--bold-text);
@@ -95,20 +95,27 @@ a{
         font-family: var(--light-text);
         font-size: 1.25em;
         margin-top: 1em;
-        margin-bottom: 2em;
+        margin-bottom: 0.5em;
     }
     .schedule-bt {
         font-family: var(--medium-text);
         background-color: var(--accent-color);
         color: #FFFFFF;
         padding: 0.75em;
+        width: fit-content;
         border-radius: 0.25em;
         margin-top: var(--primary-spacing);
+        margin-bottom: var(--primary-spacing);
     }
     .discover-bt {
         font-family: var(--medium-text);
         color: var(--accent-color);
     }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
     /* Main styling end */
 
     /* Dictionary Section Styling */
@@ -130,6 +137,7 @@ a{
         font-family: var(--light-text);
         color: #FFFFFF;
     }
+    
     /* Dictionary styling end */
 
     /* Steps section styling */

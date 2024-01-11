@@ -49,7 +49,7 @@ a{
     text-decoration: none;
 }
 
-/* Mobile and some smaller screens */
+/* Mobile and some smaller screens  */
     
     /* Header styling */
 
@@ -83,7 +83,7 @@ a{
     h1 {
         font-family: var(--light-text);
         color: var(--subtitle-text-color);
-        font-size: 1em;
+        font-size: 1.25em;
         margin-top: 4em;
     }
     h2 {
@@ -124,7 +124,7 @@ a{
         background-color: var(--primary-text-color);
         padding: var(--secondary-spacing);
     }
-    h3 {
+    .quote {
         font-family: var(--bold-text);
         color: #FFFFFF;
         font-size: 2em;
@@ -190,11 +190,77 @@ a{
 
     /* gets ugly after this soooquery */ 
 
+    /* Tablets and small laptop screens 528px - 800px */
     @media (min-width: 33em) {
+
+        /* Header styling */
+
+        .logo {
+            height: 2.5em;
+        }
+
+        /* Header styling end */ 
+
+        /* Main styling start */
+        
+        h1 {
+            font-size: 1.3em;
+        }
+
+        main {
+            margin: 3em;
+        }
+
+        /* Main styling end */ 
+    }
+
+    /* Laptop and larger screens 800px - 1212px  */ 
+    @media (min-width: 50em) {
         
         /* Header styling */
 
         .logo {
             height: 2.5em;
         }
+
+        /* Header styling end */ 
+
+        /* Main styling */ 
+
+        main{
+            margin: 5em;
+        }
+
+        .oneliner {
+            margin-right: 3.5em;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .abstract {
+            margin-top: var(--secondary-spacing);
+        }
+
+        .left{ 
+            width: 60%;
+        }
+        .right{
+            width: 40%;
+            margin-left: 2em;
+            margin-top: var(--secondary-spacing);
+        }
+
+        /* Main styling end */ 
+
+        /* Dictionary styling start */ 
+        h3 {
+            margin: var(--primary-spacing);
+        }
+        .ai-paragraph {
+            margin: var(--primary-spacing);
+        }
+
+        /* Dictionary styling end */ 
     }

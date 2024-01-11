@@ -42,7 +42,8 @@
 
 body{
     background-color: var(--main-bg-color);
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    margin: var(--primary-spacing);
 }
 
 a{
@@ -50,23 +51,16 @@ a{
     text-decoration: none;
 }
 
-/* Mobile and smaller screens */
-@media (min-width: 20em) {
-
-    body {
-        display: flex;
-        flex-direction: column;
-        margin: 1em;
-    }
+/* Mobile and some smaller screens */
     
     /* Header styling */
 
-    header{
+    header {
         display: flex;
-        margin: 0.5em;
         justify-content: space-between;
+        margin: 0.5em;
     }
-
+    
     .logo {
         height: 1.5em;
     }
@@ -84,7 +78,7 @@ a{
     /* Main section styling */
 
     main {
-        margin: var(--secondary-spacing) var(--primary-spacing) 3em var(--secondary-spacing);
+        margin: var(--secondary-spacing) var(--primary-spacing) 5em var(--secondary-spacing);
     }
     h1 {
         font-family: var(--light-text);
@@ -110,27 +104,26 @@ a{
         padding: 0.75em;
         border-radius: 0.25em;
         margin-top: var(--primary-spacing);
-        margin-bottom: 1em;
     }
     .discover-bt {
         font-family: var(--medium-text);
         color: var(--accent-color);
-        margin-top: 3em;
     }
     /* Main styling end */
 
     /* Dictionary Section Styling */
     .dictionary {
         background-color: var(--primary-text-color);
-        width: 100%;
-        margin: var(--secondary-spacing);
+        margin: 0;
+        padding: var(--secondary-spacing);
     }
-    h3{
+    h3 {
         font-family: var(--bold-text);
         color: #FFFFFF;
         font-size: 2em;
+        margin-bottom: 0.5em;
     }    
-    strong{
+    strong {
         color: #9B9A92;
     }
     .ai-paragraph {
@@ -183,4 +176,12 @@ a{
         background-color: var(--primary-text-color);
     }
     /* Cases styling end */
-}
+
+    /* gets ugly after this soooquery */ 
+
+    @media (min-width: 33em) {
+        
+        body{
+            background-color: var(--accent-color);
+        }
+    }

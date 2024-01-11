@@ -49,6 +49,16 @@ a{
     text-decoration: none;
 }
 
+.schedule-bt:hover {
+    background-color: #d14848;
+    transition: 1.25s;
+}
+
+.discover-bt:hover {
+    color: var(--primary-text-color);
+    transition: 1.25s;
+}
+
 /* Mobile and some smaller screens  */
     
     /* Header styling */
@@ -94,7 +104,7 @@ a{
     .abstract {
         font-family: var(--light-text);
         font-size: 1.25em;
-        margin-top: 1em;
+        margin-top: var(--primary-spacing);
         margin-bottom: 0.5em;
     }
     .schedule-bt {
@@ -172,11 +182,11 @@ a{
         font-family: var(--medium-text);
         font-size: 1.2em;
         color: var(--subtitle-text-color);
-        margin: 1em;
+        margin: var(--primary-spacing);
     }
     .card-text {
         font-family: var(--light-text);
-        margin: 1em;
+        margin: var(--primary-spacing);
     }
     /* Steps styling end */ 
 
@@ -190,7 +200,7 @@ a{
 
     /* gets ugly after this soooquery */ 
 
-    /* Tablets and small laptop screens 528px - 800px */
+   /* 528px */
     @media (min-width: 33em) {
 
         /* Header styling */
@@ -214,13 +224,18 @@ a{
         /* Main styling end */ 
     }
 
-    /* Laptop and larger screens 800px - 1212px  */ 
+    /* 800px */
     @media (min-width: 50em) {
         
         /* Header styling */
 
         .logo {
             height: 2.5em;
+        }
+
+        .contact-bt {
+            margin-top: 0.5em;
+            padding: 0.5em;
         }
 
         /* Header styling end */ 
@@ -248,19 +263,102 @@ a{
         }
         .right{
             width: 40%;
-            margin-left: 2em;
+            margin-left: var(--secondary-spacing);
             margin-top: var(--secondary-spacing);
         }
 
         /* Main styling end */ 
 
-        /* Dictionary styling start */ 
-        h3 {
-            margin: var(--primary-spacing);
+        /* Dictionary styling start */
+
+        .quote {
+            margin-left: 1.25em;
         }
         .ai-paragraph {
-            margin: var(--primary-spacing);
+            margin-left: var(--secondary-spacing);
+            padding-right: 10em;
         }
 
         /* Dictionary styling end */ 
+    }
+    /* 1096 */ 
+    @media (min-width: 68.5em) {
+
+        /* Header */
+
+        .contact-bt {
+            margin-top: 0.5em;
+            padding: 0.5em;
+        }
+
+        .burger-menu {
+            padding: var(--primary-spacing);
+            margin-top: 0.3em;
+        }
+
+        /* Main */
+
+        main {
+            margin-bottom: 5em;
+        }
+
+        .oneliner {
+            
+        }
+
+        .abstract {
+            margin-bottom: 7.5em;
+            padding-right: 3em;
+        }
+
+        /* Dictionary */
+
+
+
+    }
+
+
+    /* 1200 */ 
+    @media (min-width: 75em) {
+        
+        /* Main */ 
+
+        .oneliner {
+            font-size: 3.5em;
+            padding-right: 4em;
+        }
+
+        .abstract {
+            font-size: 1.5em;
+            margin-bottom: var(--secondary-spacing);
+        }
+
+        .right{
+            margin-top: 3em;
+            margin-left: -2em;
+        }
+
+        .schedule-bt {
+            padding: var(--primary-spacing);
+        }
+
+        .discover-bt {
+            font-size: 1.1em;
+        }
+
+        /* Dictionary */ 
+
+        .dictionary {
+        }
+
+        .quote {
+            margin-top: 2em;
+            font-size: 2.5em;
+        }
+
+        .ai-paragraph {
+            font-size: 1.5em;
+            padding-top: 2em;
+            padding-left: 7.5em;
+        }
     }

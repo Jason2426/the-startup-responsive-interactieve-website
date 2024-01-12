@@ -15,6 +15,7 @@
     --medium-text: 'Aktiv-Rg', sans serif;
     --medium-text: 'Aktiv-Md', sans serif;
     --bold-text: 'Aktiv-Bd', sans serif;
+
 }
 /* Load in Fonts */ 
 @font-face {

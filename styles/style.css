@@ -61,13 +61,23 @@ a{
 }
 
 /* #region Mobile and small screen styling  */
+
+    :root {
+        --small-spacing : 0.5em;
+        --regular-spacing : 1.5em;
+
+        --title-size: 2em;
+        --title-spacing: 1.5em 0em 0.5em 0em;
+
+        --image-backgroundColor : #EEEEEE;
+    }
     
     /* Header styling */
 
     header {
         display: flex;
         justify-content: space-between;
-        margin: 1.5em;
+        margin: var(--regular-spacing)
     }
 
     .logo {
@@ -93,11 +103,11 @@ a{
         font-family: var(--light-text);
         color: var(--subtitle-text-color);
         font-size: 1.25em;
-        margin-top: 4em;
+        margin-top: calc(var(--secondary-spacing) * 2);
     }
     h2 {
         font-family: var(--bold-text);
-        font-size: 2.5em;
+        font-size: calc(var(--title-size) + 0.5em);
         margin-top: 0.75em;
     }
     .abstract {
@@ -135,8 +145,8 @@ a{
     .quote {
         font-family: var(--bold-text);
         color: #FFFFFF;
-        font-size: 2em;
-        margin: 1.5em 0em 0.5em 0em;
+        font-size: var(--title-size);
+        margin: var(--title-spacing);
     }    
     strong {
         color: #9B9A92;
@@ -145,7 +155,7 @@ a{
         font-family: var(--light-text);
         font-size: 1.25em;
         color: #FFFFFF;
-        margin-bottom: var(--secondary-spacing);
+        margin-bottom: calc(var(--secondary-spacing) + var(--primary-spacing));
     }
     
     /* Steps section styling */
@@ -153,37 +163,39 @@ a{
     .steps {
         padding: var(--secondary-spacing);
     }
-
-    h4{
+    .steps-title {
         font-family: var(--bold-text);
-        font-size: 2em;
-        margin: var(--primary-spacing) 0em var(--primary-spacing) 0em;
+        font-size: var(--title-size);
+        margin: var(--title-spacing);
     }
-    .card1 {
-        margin: var(--secondary-spacing);
-        border-radius: 0.5em;
 
-        outline-style: solid;
+    .card1 {
+        margin-top: calc(var(--primary-spacing) * 2);
+        /* padding: calc(var(--secondary-spacing) + 1em); */
+        border-radius: var(--primary-spacing);
+        outline: solid 0.5px;
         outline-color: #DADAD5;
+
+        margin-bottom: calc(var(--secondary-spacing) + var(--primary-spacing));
     }
-    .card-img {
-        height: 13em;
-        background-color: #EEEEEE;
+    .card-img1 {
+        background-color: var(--image-backgroundColor);
+        width: 100%;
         border-radius: 1em;
     }
-    h5 {
+
+    .card-title {
         font-family: var(--bold-text);
         font-size: 1.5em;
     }
-    .subtitle {
-        font-family: var(--medium-text);
-        font-size: 1.2em;
-        color: var(--subtitle-text-color);
-        margin: var(--primary-spacing);
+    .card-subtitle {
+        font-family: var(--light-text);
+        font-size: 1.5em;
+        color: #AEAEAE;
     }
     .card-text {
         font-family: var(--light-text);
-        margin: var(--primary-spacing);
+        font-size: 1.25em;
     }
 
     /* Cases section styling */
@@ -312,6 +324,9 @@ a{
 /* #region 1200 breakpoint styling */ 
     @media (min-width: 75em) {
         
+        .card-img1 {
+            height: 20em;
+        }
         /* Main styling */ 
 
         .oneliner {
@@ -340,17 +355,23 @@ a{
         /* Dictionary styling */ 
 
         .dictionary {
+            
         }
 
         .quote {
             margin-top: 2em;
             font-size: 2.5em;
+            margin-left: 5em;
         }
 
         .ai-paragraph {
+            /* experimenting with style */
+            
+            text-align: right;
             font-size: 1.5em;
-            padding-top: 2em;
-            padding-left: 7.5em;
+            padding-top: 1em;
+            padding-left: 20em;
+            /* margin-right: 20em; */
         }
     }
 

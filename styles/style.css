@@ -60,7 +60,7 @@ a{
     transition: 1.25s;
 }
 
-/* Mobile and some smaller screens  */
+/* #region Mobile and small screen styling  */
     
     /* Header styling */
 
@@ -82,8 +82,6 @@ a{
         outline-style: solid;
         outline-offset: 0.2em;
     }
-    
-    /* Header styling end */
 
     /* Main section styling */
 
@@ -128,7 +126,6 @@ a{
         flex-direction: column;
     }
 
-    /* Main styling end */
 
     /* Dictionary Section Styling */
     .dictionary {
@@ -151,7 +148,6 @@ a{
         margin-bottom: var(--secondary-spacing);
     }
     
-    /* Dictionary styling end */
 
     /* Steps section styling */
     .steps {
@@ -189,7 +185,6 @@ a{
         font-family: var(--light-text);
         margin: var(--primary-spacing);
     }
-    /* Steps styling end */ 
 
     /* Cases section styling */
 
@@ -197,12 +192,17 @@ a{
         display: grid;
         background-color: var(--primary-text-color);
     }
-    /* Cases styling end */
 
-    /* gets ugly after this soooquery */ 
+/* #endregion Mobile styling  */
 
-   /* 528px */
+/* gets ugly after this soooquery */ 
+
+/* #region 528px Breakpoint styling */
     @media (min-width: 33em) {
+
+        :root {
+            --tertiary-spacing: 3em
+        }
 
         /* Header styling */
 
@@ -219,13 +219,14 @@ a{
         }
 
         main {
-            margin: 3em;
+            margin: var(--tertiary-spacing);
         }
 
         /* Main styling end */ 
     }
+/* #endregion */
 
-    /* 800px */
+/* #region 800px Breakpoint styling */
     @media (min-width: 50em) {
         
         /* Header styling */
@@ -268,8 +269,6 @@ a{
             margin-top: var(--secondary-spacing);
         }
 
-        /* Main styling end */ 
-
         /* Dictionary styling start */
 
         .quote {
@@ -279,18 +278,19 @@ a{
             margin-left: var(--secondary-spacing);
             padding-right: 10em;
         }
-
-        /* Dictionary styling end */ 
     }
-    /* 1096 */ 
+/* #endregion */
+
+    
+/* #region 1096px Breakpoint styling */ 
     @media (min-width: 68.5em) {
+
+        :root {
+            --small-spacing : 0.5em;
+        }
 
         /* Header */
 
-        .contact-bt {
-            margin-top: 0.5em;
-            padding: 0.5em;
-        }
 
         .burger-menu {
             padding: var(--primary-spacing);
@@ -303,23 +303,18 @@ a{
             margin-bottom: 5em;
         }
 
-        .oneliner {
-            
-        }
-
         .abstract {
             margin-bottom: 7.5em;
             padding-right: 3em;
         }
 
-        /* Dictionary */
-
-
+        /* Dictionary styling */
 
     }
+/* #endregion */
 
 
-    /* 1200 */ 
+/* #region 1200 Breakpoint styling */ 
     @media (min-width: 75em) {
         
         /* Main */ 
@@ -363,3 +358,5 @@ a{
             padding-left: 7.5em;
         }
     }
+
+/* #endregion */

@@ -205,6 +205,7 @@ a{
         background-color: var(--primary-text-color);
     }
 
+/* #region entrance animation */
     .entrance {
   -webkit-animation: entrance 2s cubic-bezier(.25, .46, .45, .94) both;
   animation: entrance 1s 0.2s cubic-bezier(.25, .46, .45, .94) both
@@ -229,6 +230,7 @@ a{
     opacity: 1;
   }
 }
+/* #endregion entrance animation */ 
 
 /* #endregion Mobile styling  */
 

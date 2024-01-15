@@ -180,22 +180,31 @@ a{
     }
     .card-img1 {
         background-color: var(--image-backgroundColor);
+        height: 15em;
         width: 100%;
-        border-radius: 1em;
+        border-radius: 1em 1em 0em 0em;
     }
 
     .card-title {
         font-family: var(--bold-text);
         font-size: 1.5em;
+        margin: 0.25em;
     }
     .card-subtitle {
         font-family: var(--light-text);
         font-size: 1.5em;
         color: #AEAEAE;
+        margin: 0.25em;
     }
     .card-text {
         font-family: var(--light-text);
         font-size: 1.25em;
+        margin: 0.25em;
+    }
+
+    .card-content-text {
+        /* margin: 1.5em; */
+        padding: 1.5em;
     }
 
     /* Cases section styling */
@@ -334,7 +343,7 @@ a{
         /* Main Styling */
 
         main {
-            margin-bottom: 5em;
+            margin-bottom: 7.5em;
         }
 
         .abstract {
@@ -393,8 +402,6 @@ a{
 
         .ai-paragraph {
             /* experimenting with style */
-            
-            text-align: right;
             font-size: 1.5em;
             padding-top: 1em;
             padding-left: 20em;

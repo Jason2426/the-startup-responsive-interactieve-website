@@ -205,6 +205,31 @@ a{
         background-color: var(--primary-text-color);
     }
 
+    .entrance {
+        -webkit-animation: entrance 1s cubic-bezier(.25, .46, .45, .94) both;
+        animation: entrance 1s cubic-bezier(.25, .46, .45, .94) both
+      }
+      
+      @keyframes entrance {
+        0% {
+          -webkit-transform: translateZ(-1400px) translateY(-800px);
+          transform: translateZ(-1400px) translateY(-800px);
+          opacity: 0;
+        }
+      
+        50% {
+          -webkit-transform: translateZ(140px) translateY(80px);
+          transform: translateZ(140px) translateY(80px);
+          opacity: 1;
+        }
+      
+        100% {
+          -webkit-transform: translateZ(0) translateY(0);
+          transform: translateZ(0) translateY(0);
+          opacity: 1;
+        }
+      }
+
 /* #endregion Mobile styling  */
 
 /* gets ugly after this soooquery */ 

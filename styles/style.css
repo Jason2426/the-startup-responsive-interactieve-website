@@ -170,34 +170,37 @@ a{
     }
 
     .carousel {
-        scroll-snap-type: x proximity;
-        flex-shrink: 0;
-
-        overflow:auto;
-    
+        display: flex;
+        gap: 300px;
+        overflow: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         scroll-padding: 0%;
     }
 
     .card {
+        min-width: 350px;
         margin-top: calc(var(--primary-spacing) * 2);
         /* padding: calc(var(--secondary-spacing) + 1em); */
-        border-radius: var(--primary-spacing);
+        border-radius: calc(var(--primary-spacing) - 0.5em);
         outline: solid 0.5px;
         outline-color: #DADAD5;
-
         margin-bottom: calc(var(--secondary-spacing) + var(--primary-spacing));
+        scroll-snap-align: center;
     }
-    .card-img1 {
+    .card-img {
         background-color: var(--image-backgroundColor);
         height: 15em;
         width: 100%;
-        border-radius: 1em 1em 0em 0em;
+        border-radius: 0.5em 0.5em 0em 0em;
     }
 
     #card2 {
-        display: none;
+        
+    }
+
+    #card3 {
+       
     }
 
     .card-title {

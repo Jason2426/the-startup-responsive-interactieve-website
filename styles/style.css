@@ -171,36 +171,32 @@ a{
 
     .carousel {
         display: flex;
-        gap: 300px;
+       
+        gap: 50px;
         overflow: auto;
+
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        scroll-padding: 0%;
+        scroll-padding: 0 24px;
     }
 
     .card {
         min-width: 350px;
+
         margin-top: calc(var(--primary-spacing) * 2);
-        /* padding: calc(var(--secondary-spacing) + 1em); */
+        margin-bottom: calc(var(--secondary-spacing) + var(--primary-spacing));
+
         border-radius: calc(var(--primary-spacing) - 0.5em);
         outline: solid 0.5px;
-        outline-color: #DADAD5;
-        margin-bottom: calc(var(--secondary-spacing) + var(--primary-spacing));
+        outline-color: #969691;
         scroll-snap-align: center;
     }
+
     .card-img {
         background-color: var(--image-backgroundColor);
         height: 15em;
         width: 100%;
         border-radius: 0.5em 0.5em 0em 0em;
-    }
-
-    #card2 {
-        
-    }
-
-    #card3 {
-       
     }
 
     .card-title {
@@ -408,10 +404,6 @@ a{
 
         /* Dictionary styling */ 
 
-        .dictionary {
-            
-        }
-
         .quote {
             margin-top: 2em;
             font-size: 2.5em;
@@ -436,10 +428,11 @@ a{
         }
         .steps-title {
             font-size: 2.5em;
+            margin-right: 20em;
         }
 
         .card {
-            width: 33%;
+            width: 40%;
         }
         .card-img1 {
             width: 100%;

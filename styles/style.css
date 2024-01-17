@@ -142,26 +142,23 @@ a.menu-item:hover {
         padding-top: 4rem;
     }
 
-    .menu-item-title{
+    .menu-item{
         color: #FFFFFF;
         font-family: var(--medium-text);
         font-size: 2em;
         margin: var(--secondary-spacing);
     }
-    
-    li .normal-menu-item{
-        margin: 2em;
+
+    li {
         font-family: var(--medium-text);
     }
 
     .closeIcon {
         display: none;
-    }
-
-    .close-Icon {
         font-family: var(--medium-text);
         font-size: 1.5em;
     }
+
 
     .showMenu {
         transform: translateY(0);

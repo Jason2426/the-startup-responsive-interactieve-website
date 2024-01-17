@@ -60,6 +60,15 @@ a{
     transition: 1.25s;
 }
 
+a.menu-item-title:hover {
+    color: var(--accent-color);
+    transition: 0.25s;
+}
+a.menu-item:hover {
+    color: var(--accent-color);
+    transition: 0.25s;
+}
+
 /* #region Mobile and small screen styling  */
 
     :root {
@@ -89,9 +98,57 @@ a{
         position: absolute;
         right: 0;
         margin-right: 6em;
+        margin-top: 0.25em;
         outline-style: solid;
         outline-offset: 0.2em;
     }
+
+    /* Menu styling */
+
+    .hamburger{
+        position: static;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+    .hamburger .closeIcon {
+        color: white;
+    }
+
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.38s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: var(--primary-text-color);
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+    }
+
+
+    li a{
+        color: #FFFFFF;
+        font-family: var(--medium-text);
+        font-size: 2em;
+        margin: 2em;
+    }
+
+    .closeIcon {
+        display: none;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+      }
 
     /* Main section styling */
 

@@ -135,12 +135,13 @@ a.menu-item:hover {
     }
 
 
-    li a{
+    .menu-item-title{
         color: #FFFFFF;
         font-family: var(--medium-text);
         font-size: 2em;
-        margin: 2em;
+        margin: var(--secondary-spacing);
     }
+
 
     .closeIcon {
         display: none;

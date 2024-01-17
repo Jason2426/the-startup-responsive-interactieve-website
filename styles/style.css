@@ -170,11 +170,11 @@ a{
     }
 
     .carousel {
-        display: flex;
+        display: flex; 
+        gap: 50px; /* Spacing between cards */ 
 
-        gap: 50px;
         overflow: auto;
-
+        
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         scroll-padding: 0 24px;

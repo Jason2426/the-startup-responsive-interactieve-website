@@ -2,7 +2,7 @@
     /* Huisstijl kleuren */ 
     --main-bg-color: #FFFFFF; 
     --secondary-bg-color: #F6F6F4; 
-    --secondary-bg-color: #3C3B34;
+    --tertiary-bg-color: #3C3B34;
     --primary-text-color: #3C3B34; 
     --subtitle-text-color : #9B9A92; 
     --accent-color: #FF6B6B;
@@ -142,21 +142,38 @@ a.menu-item:hover {
         padding-top: 4rem;
     }
 
-    .menu-item{
+    .menu-item-title{
         color: #FFFFFF;
         font-family: var(--medium-text);
         font-size: 2em;
-        margin: var(--secondary-spacing);
+        margin-top: 5em;
+        margin-left: 1em;
+        line-height: 1.5;
     }
 
-    li {
-        font-family: var(--medium-text);
+    .menu-item-subtitle {
+        color: #9B9A92;
+        font-family: var(--light-text);
+        margin-left: 2em;
+        font-size: 1em;
     }
+
+    .menu-item-normal {
+        color: #FFFFFF;
+        font-family: var(--light-text);
+        margin-left: 3em;
+    }
+
 
     .closeIcon {
         display: none;
         font-family: var(--medium-text);
         font-size: 1.5em;
+        position: sticky;
+    }
+
+    #hideItem {
+        display: hidden;
     }
 
 

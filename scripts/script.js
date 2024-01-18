@@ -7,6 +7,8 @@ const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 const menuLabel = document.querySelector(".menuLabel");
 
+const hideItem = document.getElementById(".hideItem");
+
 /*Javascript above, all menu items with querySelectorAll. */
 
 /* Clicking on the hamburger button will call toggleMenu(). */ 
@@ -25,7 +27,7 @@ function toggleMenu() {
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
-    menuLabel.style.display = "none"
+    menuLabel.classList.add("hideItem");
   }
 }
 

@@ -174,9 +174,9 @@ a.menu-item:hover {
         position: sticky;
     }
 
-    #hideItem {
+    /* .hideItem {
         display: hidden;
-    }
+    } */
 
 
     .showMenu {
@@ -271,7 +271,39 @@ a.menu-item:hover {
 
     }
 
-    .carousel::-webkit-scrollbar { display: none; }
+    /* .carousel::-webkit-scrollbar { display: block; } */
+
+    /* Carousel indicator */ 
+
+    contenteditable>.carrousel-indicator {
+        --indicator-size: 6px;
+        --max-indicators: 5;
+       
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        max-width: calc(var(--max-indicators) * var(--indicator-size) + (var(--max-indicators) - 1) * var(--indicator-size) / 2);
+        overflow: hidden;
+        overflow: clip;
+        pointer-events: none;
+       }
+        .carrousel-indicator-span {
+         display: flex;
+         gap: calc(var(--indicator-size) / 2);
+         height: var(--indicator-size);
+        }
+         .carrousel-indicator-span-span {
+          flex: 0 0 var(--indicator-size);
+          width: var(--indicator-size);
+          height: var(--indicator-size);
+          border-radius: 50%;
+          background: #fff;
+          opacity: .5;
+          transition: .2s ease-out opacity;
+         }
+         .carrousel-indicator-span-span.is-active {
+          opacity: 1;
+         }
 
     .card {
         min-width: 350px;

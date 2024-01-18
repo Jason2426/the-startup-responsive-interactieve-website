@@ -27,7 +27,8 @@ function toggleMenu() {
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
-    menuLabel.classList.add("hideItem");
+    // menuLabel.classList.add("hideItem");
+    menuLabel.style.display = "none";
   }
 }
 

@@ -101,16 +101,17 @@ a.menu-item:hover {
         margin-top: 0.25em;
         outline-style: solid;
         outline-offset: 0.2em;
+        outline-width: thin;
     }
 
     /* Menu styling */
 
     span {
-        font-family: var(--medium-text);
+        font-family: var(--light-text);
+        font-size: 1.25em;
         position: absolute;
         right: 0;
-        margin-right: 4.5em;
-        margin-top: 0.25em;
+        margin-right: 3.5em;
     }
     
     .hamburger{
@@ -305,8 +306,14 @@ a.menu-item:hover {
     }
 
     .card-content-text {
-        /* margin: 1.5em; */
-        padding: 1.5em;
+        padding: 1em;
+    }
+
+    .menu-img {
+        height: 2em;
+    }
+    .close-img {
+        height: 2em;
     }
 
     /* Cases section styling */
@@ -360,6 +367,23 @@ a.menu-item:hover {
             height: 2.5em;
         }
 
+        /* Menu styling */
+
+        .menuLabel {
+            font-size: 1.5em;
+            font-family: var(--light-text);
+        }
+
+        span {
+            margin-right: 3em;
+            margin-top: -0.15em;
+        }
+
+        .contact-bt {
+            margin-right: 8.5em;
+            margin-top: 0.5em;
+        }
+
         /* Main styling start */
         
         h1 {
@@ -387,6 +411,15 @@ a.menu-item:hover {
             padding: 0.5em;
         }
 
+        /* Menu styling */ 
+
+        .hamburger {
+            margin-top: 0.75em;
+        }
+
+        .menuIcon {
+            height: 2em;
+        }
         /* Main styling */ 
 
         main{

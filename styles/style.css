@@ -69,6 +69,7 @@ a.menu-item:hover {
     transition: 0.25s;
 }
 
+
 /* #region Mobile and small screen styling  */
 
     :root {
@@ -267,7 +268,10 @@ a.menu-item:hover {
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         scroll-padding: 0 24px;
+
     }
+
+    .carousel::-webkit-scrollbar { display: none; }
 
     .card {
         min-width: 350px;

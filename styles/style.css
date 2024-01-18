@@ -103,10 +103,15 @@ a.menu-item:hover {
         outline-style: solid;
         outline-offset: 0.2em;
         outline-width: thin;
+
+        transform: skew(10deg, 20deg); /* Experimenting transform property */ 
     }
 
     /* Menu styling */
 
+    li {
+        margin: 0.5em;
+    }
     span {
         font-family: var(--light-text);
         font-size: 1.25em;
@@ -127,6 +132,8 @@ a.menu-item:hover {
     }
     .hamburger .closeIcon {
         color: white;
+        position: sticky;
+        top: 0;
     }
 
     .menu {
@@ -141,7 +148,7 @@ a.menu-item:hover {
         background: var(--primary-text-color);
         color: white;
         list-style: none;
-        padding-top: 4rem;
+        padding-top: 5em;
     }
 
     .menu-item-title{
@@ -174,14 +181,14 @@ a.menu-item:hover {
         position: sticky;
     }
 
-    /* .hideItem {
+    .hideItem {
         display: hidden;
-    } */
+    }
 
 
     .showMenu {
         transform: translateY(0);
-      }
+    }
 
     /* Main section styling */
 
@@ -252,6 +259,7 @@ a.menu-item:hover {
 
     .steps {
         padding: var(--secondary-spacing);
+        padding-bottom: 5em;
     }
     .steps-title {
         font-family: var(--bold-text);
@@ -273,38 +281,6 @@ a.menu-item:hover {
 
     /* .carousel::-webkit-scrollbar { display: block; } */
 
-    /* Carousel indicator */ 
-
-    contenteditable>.carrousel-indicator {
-        --indicator-size: 6px;
-        --max-indicators: 5;
-       
-        position: absolute;
-        bottom: 16px;
-        left: 16px;
-        max-width: calc(var(--max-indicators) * var(--indicator-size) + (var(--max-indicators) - 1) * var(--indicator-size) / 2);
-        overflow: hidden;
-        overflow: clip;
-        pointer-events: none;
-       }
-        .carrousel-indicator-span {
-         display: flex;
-         gap: calc(var(--indicator-size) / 2);
-         height: var(--indicator-size);
-        }
-         .carrousel-indicator-span-span {
-          flex: 0 0 var(--indicator-size);
-          width: var(--indicator-size);
-          height: var(--indicator-size);
-          border-radius: 50%;
-          background: #fff;
-          opacity: .5;
-          transition: .2s ease-out opacity;
-         }
-         .carrousel-indicator-span-span.is-active {
-          opacity: 1;
-         }
-
     .card {
         min-width: 350px;
 
@@ -315,6 +291,10 @@ a.menu-item:hover {
         outline: solid 0.5px;
         outline-color: #969691;
         scroll-snap-align: center;
+    }
+
+    #card2 .card-title {
+        font-size: 1.5em;
     }
 
     .card-img {
@@ -356,7 +336,20 @@ a.menu-item:hover {
 
     .cases {
         display: grid;
+        /* grid-template-columns: 2;
+        grid-template-rows: 2; */
+        padding: var(--secondary-spacing);
         background-color: var(--primary-text-color);
+    }
+    .cases-title {
+        color: #F6F6F4;
+        font-size: 2.5em;
+        font-family: var(--bold-text);
+        margin: var(--title-spacing);
+    }
+    .case-img {
+        height: 200px;
+        border-radius: 0.5em;
     }
 
 /* #region entrance animation */
@@ -384,6 +377,8 @@ a.menu-item:hover {
     opacity: 1;
   }
 }
+
+
 /* #endregion entrance animation */ 
 
 /* #endregion Mobile styling  */
@@ -494,7 +489,6 @@ a.menu-item:hover {
         }
     }
 /* #endregion */
-
     
 /* #region 1096px breakpoint styling */ 
     @media (min-width: 68.5em) {
@@ -527,13 +521,9 @@ a.menu-item:hover {
     }
 /* #endregion */
 
-
 /* #region 1200 breakpoint styling */ 
     @media (min-width: 75em) {
         
-        .card-img1 {
-            height: 20em;
-        }
         /* Main styling */ 
 
         .oneliner {
@@ -585,7 +575,7 @@ a.menu-item:hover {
         }
         .steps-title {
             font-size: 2.5em;
-            margin-right: 20em;
+            margin-right: 15em;
         }
 
         .carousel {

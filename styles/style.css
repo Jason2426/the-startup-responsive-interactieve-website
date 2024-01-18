@@ -17,7 +17,7 @@
     --bold-text: 'Aktiv-Bd', sans serif;
 
 }
-/* Load in Fonts */ 
+/* #region LoadInFonts */ 
 @font-face {
     font-family: 'Aktiv-Lt';
     src: url(../assets/Font/AktivGrotesk_Lt.ttf);
@@ -34,6 +34,8 @@
     font-family: 'Aktiv-Bd';
     src: url(../assets/Font/AktivGrotesk_Bd.ttf);
 }
+
+/* #endregion */
 
 * {
     margin: 0;
@@ -172,7 +174,6 @@ a.menu-item:hover {
         font-family: var(--light-text);
         margin-left: 3em;
     }
-
 
     .closeIcon {
         display: none;

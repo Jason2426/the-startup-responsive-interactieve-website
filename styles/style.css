@@ -111,9 +111,6 @@ header {
     outline-style: solid;
     outline-offset: 0.2em;
     outline-width: thin;
-
-    /* transform: skew(10deg, 20deg); */
-    /* Experimenting transform property */
 }
 
 /* Menu styling */
@@ -188,13 +185,7 @@ span {
 .closeIcon {
     font-family: var(--medium-text);
     font-size: 1.5em;
-    position: sticky;
 }
-
-.hideItem {
-    display: hidden;
-}
-
 
 .showMenu {
     transform: translateY(0);
@@ -217,6 +208,11 @@ h2 {
     font-family: var(--bold-text);
     font-size: calc(var(--title-size) + 0.5em);
     margin-top: 0.75em;
+
+
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
 .abstract {
@@ -384,11 +380,12 @@ strong {
 
 
 
-/* #region entrance animation */
+/* #region keyframes animations */
 .entrance {
     -webkit-animation: entrance 2s cubic-bezier(.25, .46, .45, .94) both;
     animation: entrance 1s 0.2s cubic-bezier(.25, .46, .45, .94) both
 }
+
 
 @keyframes entrance {
     0% {
@@ -410,8 +407,7 @@ strong {
     }
 }
 
-
-/* #endregion entrance animation */
+/* #endregion keyframes animation */
 
 /* #endregion Mobile styling  */
 

@@ -10,22 +10,15 @@ const menuLabel = document.querySelector(".menuLabel");
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
-    // closeIcon.style.display = "none";
-    // menuIcon.style.display = "block";
     closeIcon.hidden = true;
     menuIcon.hidden = false;
     menuLabel.hidden = false;
-    // menuLabel.style.display = "block";
     
   } else {
     menu.classList.add("showMenu");
-    // closeIcon.style.display = "block";
-    // menuIcon.style.display = "none";
-    // menuLabel.style.display = "none";
     closeIcon.hidden = false;
     menuIcon.hidden = true;
     menuLabel.hidden = true;
-    // menuLabel.classList.toggle("hideItem");
   }
 }
 

@@ -111,7 +111,7 @@ header {
     outline-offset: 0.2em;
     outline-width: thin;
 
-    transform: skew(10deg, 20deg);
+    /* transform: skew(10deg, 20deg); */
     /* Experimenting transform property */
 }
 
@@ -419,7 +419,7 @@ strong {
 
     .logo {
         height: 2.5em;
-        transform: skew(20deg, -20deg);
+        /* transform: skew(20deg, -20deg); */
         /* Experimenting transform property */
     }
 

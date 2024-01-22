@@ -13,6 +13,8 @@ De pagina is gemaakt aan de hand van de bestaande huisstijl van Lifely met zelf 
 
 <img width="1512" alt="Screenshot 2024-01-22 at 12 02 19" src="https://github.com/Jason2426/the-startup-responsive-interactieve-website/assets/143999883/df910b64-4ddf-4136-be49-8fb07f8ac38c">
 
+### [Live Link 🔗](https://jason2426.github.io/the-startup-responsive-interactieve-website/)
+
 ## Kenmerken (gebruikte technieken)
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 * 🎨 Figma

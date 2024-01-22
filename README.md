@@ -19,6 +19,7 @@ De pagina is gemaakt aan de hand van de bestaande huisstijl van Lifely met zelf 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 * 🎨 Figma
 * 💻 HTML, CSS en Javascript.
+* Mobile first 📱
 
 ## Licentie
 

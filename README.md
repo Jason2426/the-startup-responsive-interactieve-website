@@ -20,6 +20,8 @@ De pagina is gemaakt aan de hand van de bestaande huisstijl van Lifely met zelf 
 * 🎨 Figma
 * 💻 HTML, CSS en Javascript.
 * Mobile first 📱
+* CSS Scroll Snapping
+* Menu met JavaScript
 
 ## Licentie
 

@@ -15,6 +15,8 @@ Een pagina op Lifely waar uitgelegd word wat de AI Design Sprint stapsgewijs bij
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
+> Als gebruiker (bedrijfseignaar) wil ik graag weten wat de AI Design Sprint inhoud, de stappen en hoe ik er een afspraak voor kan maken.
+
 De pagina is gemaakt aan de hand van de bestaande huisstijl van Lifely met zelf toegevoegde twist en tweaks. Op de pagina kun je lezen over de AI Design Sprint die Lifely aanbied aan bedrijven waar ze de klant helpen aan de hand van AI.
 
 <img width="1512" alt="Screenshot 2024-01-22 at 12 02 19" src="https://github.com/Jason2426/the-startup-responsive-interactieve-website/assets/143999883/df910b64-4ddf-4136-be49-8fb07f8ac38c">

@@ -8,7 +8,9 @@ Een pagina op Lifely waar uitgelegd word wat de AI Design Sprint stapsgewijs bij
 
 * [Beschrijving](https://github.com/Jason2426/the-startup-responsive-interactieve-website?tab=readme-ov-file#beschrijving)
 
-* [Kenmerken](https://github.com/Jason2426/the-startup-responsive-interactieve-website?tab=readme-ov-file#kenmerken-gebruikte-technieken)
+* [Kenmerken](https://github.com/Jason2426/the-startup-responsive-interactieve-website?tab=readme-ov-file#kenmerken-gebruikte-technieken)]
+
+*[Bronnen]()
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
@@ -30,6 +32,10 @@ De pagina is gemaakt aan de hand van de bestaande huisstijl van Lifely met zelf 
 * Mobile first 📱
 * CSS Scroll Snapping
 * Menu met JavaScript
+
+## Bronnen 
+
+* [Bronnen die ik heb gebruikt voor het bouwen](https://github.com/Jason2426/the-startup-responsive-interactieve-website/wiki/Bouwen-%F0%9F%8F%97%EF%B8%8F#bronnen-)
 
 ## Licentie
 

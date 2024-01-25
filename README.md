@@ -8,7 +8,7 @@ Een pagina op Lifely waar uitgelegd word wat de AI Design Sprint stapsgewijs bij
 
 * [Beschrijving](https://github.com/Jason2426/the-startup-responsive-interactieve-website?tab=readme-ov-file#beschrijving)
 
-* [Kenmerken](https://github.com/Jason2426/the-startup-responsive-interactieve-website?tab=readme-ov-file#kenmerken-gebruikte-technieken)]
+* [Kenmerken](https://github.com/Jason2426/the-startup-responsive-interactieve-website?tab=readme-ov-file#kenmerken-gebruikte-technieken)
 
 * [Bronnen](https://github.com/Jason2426/the-startup-responsive-interactieve-website/blob/main/README.md#bronnen)
 

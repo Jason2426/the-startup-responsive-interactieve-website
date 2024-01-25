@@ -4,6 +4,10 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Een pagina op Lifely waar uitgelegd word wat de AI Design Sprint stapsgewijs bij hen inhoud.
 
+## Inhoudsopgave 
+
+
+
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->

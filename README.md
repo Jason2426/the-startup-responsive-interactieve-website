@@ -6,12 +6,9 @@ Een pagina op Lifely waar uitgelegd word wat de AI Design Sprint stapsgewijs bij
 
 ## Inhoudsopgave 
 
-*
+* [Beschrijving](https://github.com/Jason2426/the-startup-responsive-interactieve-website?tab=readme-ov-file#beschrijving)
 
-*
-
-*
-
+* [Kenmerken](https://github.com/Jason2426/the-startup-responsive-interactieve-website?tab=readme-ov-file#kenmerken-gebruikte-technieken)
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->

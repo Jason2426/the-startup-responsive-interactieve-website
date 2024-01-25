@@ -6,6 +6,11 @@ Een pagina op Lifely waar uitgelegd word wat de AI Design Sprint stapsgewijs bij
 
 ## Inhoudsopgave 
 
+*
+
+*
+
+*
 
 
 ## Beschrijving
